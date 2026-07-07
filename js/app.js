@@ -343,3 +343,7 @@ function copyAddress(type) {
     console.error('Failed to copy: ', err);
   });
 }
+
+setInterval(() => {
+  location.reload();
+}, 3600000);
