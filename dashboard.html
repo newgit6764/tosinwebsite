@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class="container">
+  <div class="card">
+
+    <h2>Your Portfolio</h2>
+
+    <!-- Balance Section -->
+    <div class="balance-box">
+      <h3>Total Balance</h3>
+      <p id="balance">$0</p>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="action-buttons">
+      <button onclick="window.location.href='deposit.html'">Receive Deposit</button>
+      <button class="btn-secondary" onclick="window.location.href='withdraw.html'">Withdraw</button>
+      <button class="btn-secondary" onclick="goBackupKey()">Backup Key</button>
+    </div>
+    
+
+    <!-- Transaction History -->
+    <div class="transaction-history" style="margin-top: 120px;">
+      <h3>Transaction History</h3>
+      <table>
+        <thead>
+          <tr>
+            <th onclick="sortTransactions('type')">Type ▲▼</th>
+            <th onclick="sortTransactions('coin')">Coin ▲▼</th>
+            <th onclick="sortTransactions('amount')">Amount ▲▼</th>
+            <th onclick="sortTransactions('status')">Status ▲▼</th>
+          </tr>
+        </thead>
+        <tbody id="historyTable">
+          <!-- Transactions inserted here -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Logout -->
+    <button class="btn-secondary" style="margin-top:20px" onclick="logout()">Logout</button>
+
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

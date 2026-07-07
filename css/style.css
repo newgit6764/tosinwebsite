@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #e2e8f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+    margin: 0;
+    min-height: 100vh;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    background: url("https://pctechmag.com/wp-content/uploads/2019/02/Hacker.jpg") center center/cover no-repeat;
+  
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 420px;
+  padding: 20px;
+}
+
+/* Card */
+.card {
+  background: rgba(30, 41, 59, 0.8);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  backdrop-filter: blur(10px);
+}
+
+/* Headings */
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #f1f5f9;
+}
+
+/* Inputs */
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: none;
+  background: #1e293b;
+  color: #fff;
+  font-size: 14px;
+}
+
+input:focus, select:focus {
+  outline: 2px solid #3b82f6;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #3b82f6;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+/* Secondary button */
+.btn-secondary {
+  background: #334155;
+  margin-top: 10px;
+}
+
+.btn-secondary:hover {
+  background: #475569;
+}
+
+/* Portfolio balance */
+.balance-box {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.balance-box h3 {
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.balance-box p {
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+/* Message */
+#message {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #f87171;
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+
+
+
+.index-page .card {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 350px;
+}
+
+.index-page .logo {
+  width: 70px;     
+  height: auto;      
+  margin-bottom: 20px; 
+  border-radius: 50%;   
+  object-fit: cover; 
+
+}
+
+.index-page h2 {
+  margin-bottom: 20px;
+}
+
+.index-page input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.index-page button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.index-page button:hover {
+  background-color: #45a049;
+}
+
+.index-page #message {
+  color: red;
+  margin-top: 15px;
+}
+

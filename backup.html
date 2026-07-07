@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Backup Private Key</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class="container">
+  <div class="card">
+
+    <h2>Backup Your Private Key</h2>
+    <p>Keep this private key safe. Do not share it with anyone.</p>
+
+    <div class="private-key-box" style="padding:15px; background:#000000; border-radius:5px; word-break: break-all;">
+      <span id="privateKey">fffffffffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0364141</span>
+    </div>
+
+    <button style="margin-top:20px;" onclick="copyKey()">Copy Key</button>
+    <button style="margin-top:10px;" onclick="goDashboard()">Back to Dashboard</button>
+
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+<script>
+  const privateKey = document.getElementById("privateKey").innerText;
+
+  function copyKey() {
+    navigator.clipboard.writeText(privateKey)
+      .then(() => alert("Private key copied to clipboard!"))
+      .catch(() => alert("Failed to copy key."));
+  }
+</script>
+</body>
+</html>

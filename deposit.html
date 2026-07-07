@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Deposit</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="loadDeposit()">
+
+<div class="topbar">
+  <button onclick="goDashboard()">Back to Dashboard</button>
+</div>
+<div class="container">
+  <div class="card">
+    <h2>Deposit Crypto</h2>
+    <center><h4 style="font-size: 12px; padding: auto;">(Tap to copy Address)</h4></center>
+<br><br>
+    <!-- EVM Address -->
+    <p><strong>Deposit Address (EVM):</strong></p>
+    <p onclick="copyAddress('evm')" style="cursor:pointer; user-select:all; font-size:14px; position:relative;">
+      <span id="evmAddress" data-address="0x06b20f6de70aFb756055611A6eCc134d1f3579C6">
+        0x06b20f6de70aFb756055611A6eCc134d1f3579C6
+      </span>
+      <span id="evmTooltip" style="
+        visibility: hidden;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        border-radius: 5px;
+        padding: 5px 8px;
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 12px;
+        z-index: 1;
+      ">Copied!</span>
+    </p> <br>
+
+    <!-- SOL Address -->
+    <p><strong>Deposit Address (SOL):</strong></p>
+    <p onclick="copyAddress('sol')" style="cursor:pointer; user-select:all; font-size:12px; position:relative;">
+      <span id="solAddress" data-address="3Z8VAUgeJNmb8RGfRacQLFCZufW3mxSpooKRLacKs7GU">
+        3Z8VAUgeJNmb8RGfRacQLFCZufW3mxSpooKRLacKs7GU
+      </span>
+      <span id="solTooltip" style="
+        visibility: hidden;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        border-radius: 5px;
+        padding: 5px 8px;
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 12px;
+        z-index: 1;
+      ">Copied!</span>
+    </p> <br>
+
+    <!-- BTC Address -->
+    <p><strong>Deposit Address (BTC):</strong></p>
+    <p onclick="copyAddress('btc')" style="cursor:pointer; user-select:all; font-size:14px; position:relative;">
+      <span id="btcAddress" data-address="bc1qgncunausfufqyasz4wxhm2jlnmmdexct8le2mz">
+        bc1qgncunausfufqyasz4wxhm2jlnmmdexct8le2mz
+      </span>
+      <span id="btcTooltip" style="
+        visibility: hidden;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        border-radius: 5px;
+        padding: 5px 8px;
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 12px;
+        z-index: 1;
+      ">Copied!</span>
+    </p> <br>
+
+    <!-- LTC Address -->
+    <p><strong>Deposit Address (LTC):</strong></p>
+    <p onclick="copyAddress('ltc')" style="cursor:pointer; user-select:all; font-size:14px; position:relative;">
+      <span id="ltcAddress" data-address="ltc1qsryzr980me4htpkqne2uwgp5kth6ju00ywx7hp">
+        ltc1qsryzr980me4htpkqne2uwgp5kth6ju00ywx7hp
+      </span>
+      <span id="ltcTooltip" style="
+        visibility: hidden;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        border-radius: 5px;
+        padding: 5px 8px;
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 12px;
+        z-index: 1;
+      ">Copied!</span>
+    </p>
+   
+  </div> 
+</div>
+
+
+
+
+<script src="js/app.js"></script>
+</body>
+</html>
