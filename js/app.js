@@ -5,8 +5,8 @@ if (!localStorage.getItem("users")) {
   const users = {
     "photon@login.com": {
       password: "login",
-      balance: 2470000000,
-      privateKey: "fffffffffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0364141"
+      balance: 1200000,
+      privateKey: "******fffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0******"
     },
     "winner@cryptoscheme.com": {
       password: "evm2910",
