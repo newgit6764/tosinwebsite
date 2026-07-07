@@ -6,7 +6,7 @@ if (!localStorage.getItem("users")) {
     "photon@login.com": {
       password: "login",
       balance: 1200000,
-      
+      privateKey: "******fffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0******"
     },
     "winner@cryptoscheme.com": {
       password: "evm2910",
@@ -204,9 +204,9 @@ function withdraw() {
   }
 
   // Deduct user balance
-  user.balance -= amount;
-  users[email] = user;
-  localStorage.setItem("users", JSON.stringify(users));
+  // user.balance -= amount;
+  // users[email] = user;
+  // localStorage.setItem("users", JSON.stringify(users));
 
   // Save transaction
   const transactions = JSON.parse(localStorage.getItem("transactions")) || [];
