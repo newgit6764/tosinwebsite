@@ -11,12 +11,12 @@ if (!localStorage.getItem("users")) {
     "winner@cryptoscheme.com": {
       password: "evm2910",
       balance: 10300,
-      privateKey: "fffffffffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0364141"
+      privateKey: ""
     },
     "admin@airdrop.com": {
       password: "admin",
       balance: 57900,
-      privateKey: "fffffffffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0364141"
+      privateKey: ""
     }
   };
   localStorage.setItem("users", JSON.stringify(users));
