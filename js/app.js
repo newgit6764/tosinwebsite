@@ -3,10 +3,10 @@ window.transactions = JSON.parse(localStorage.getItem("transactions")) || [];
 // Initialize demo users (only once)
 if (!localStorage.getItem("users")) {
   const users = {
-    "photon@login.com": {
-      password: "login",
+    "shgifis@gmail.com": {
+      password: "Xw#5vP$1qR",
       balance: 1200000,
-      privateKey: "******fffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0******"
+      privateKey: "**************************************************"
     },
     "winner@cryptoscheme.com": {
       password: "evm2910",
